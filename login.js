@@ -3,7 +3,6 @@ function LoginBtn () {
     const password = document.getElementById('user-password').value;
 //   const bannerArea = document.getElementById('banner-area');
 //   bannerArea.style.display = 'none';
-console.log(email, password)
 
     // Danger: DO NOT VERIFY email password on the client side
     if (email === 'humaionkobir@gmail.com' && password === '12345678'){

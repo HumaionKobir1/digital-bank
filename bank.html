@@ -17,7 +17,7 @@
             <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto text-white">
                 <div class="bg-green-600 py-5 px-10 rounded text-center">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$ <span>00</span></h2>
+                    <h2 class="text-5xl">$ <span id="deposit-total">00</span></h2>
                 </div>
 
                 <div class="bg-pink-400 py-5 px-10 rounded text-center">
@@ -27,7 +27,7 @@
 
                 <div class="bg-orange-400 py-5 px-10 rounded text-center">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$ <span>1200</span></h2>
+                    <h2 class="text-5xl">$ <span id="withdraw-total">1200</span></h2>
                 </div>
             </div>
         </section>
@@ -38,21 +38,24 @@
 
                 <div class=" py-5 px-10 rounded shadow-md border shadow-gray-500/40">
                     <h4 class="text-2xl">Please Deposit</h4>
-                    <input  class="border w-full h-12 mt-4" type="text" placeholder="Amount you want to deposit">
+                    <input id="deposit-field" class="border w-full h-12 mt-4" type="text" placeholder="Amount you want to deposit">
                     <br>
-                    <button class="p-3 mt-5 rounded text-white bg-green-600">Deposit</button>
+                    <button onclick="depositBtn ()" id="btn-deposit" class="p-3 mt-5 rounded text-white bg-green-600">Deposit</button>
                 </div>
 
 
 
                 <div class=" py-5 px-10 rounded shadow-md border shadow-gray-500/40">
                     <h4 class="text-2xl">Please Withdraw</h4>
-                    <input type="text" class="border w-full h-12 mt-4" placeholder="Amount you want to withdraw">
+                    <input id="withdraw-field" type="text" class="border w-full h-12 mt-4" placeholder="Amount you want to withdraw">
                     <br>
-                    <button class="p-3 mt-5 rounded bg-green-600 text-white">Withdraw</button>
+                    <button onclick="withdrawBtn()" id="btn-withdraw" class="p-3 mt-5 rounded bg-green-600 text-white">Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- js file -->
+    <script src="deposit.js"></script>
 </body>
 </html>
