@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center">Welcome To your <span class="text-amber-500">Digital Bank</span></h1>
+    </header>
+
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto text-white">
+                <div class="bg-green-600 py-5 px-10 rounded text-center">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$ <span>00</span></h2>
+                </div>
+
+                <div class="bg-pink-400 py-5 px-10 rounded text-center">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$ <span>00</span></h2>
+                </div>
+
+                <div class="bg-orange-400 py-5 px-10 rounded text-center">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$ <span>1200</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit and withdraw -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-3 w-9/12 mx-auto">
+
+                <div class=" py-5 px-10 rounded shadow-md border shadow-gray-500/40">
+                    <h4 class="text-2xl">Please Deposit</h4>
+                    <input  class="border w-full h-12 mt-4" type="text" placeholder="Amount you want to deposit">
+                    <br>
+                    <button class="p-3 mt-5 rounded text-white bg-green-600">Deposit</button>
+                </div>
+
+
+
+                <div class=" py-5 px-10 rounded shadow-md border shadow-gray-500/40">
+                    <h4 class="text-2xl">Please Withdraw</h4>
+                    <input type="text" class="border w-full h-12 mt-4" placeholder="Amount you want to withdraw">
+                    <br>
+                    <button class="p-3 mt-5 rounded bg-green-600 text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
