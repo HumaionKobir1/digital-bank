@@ -1,16 +1,18 @@
 function depositBtn () {
     const depositField = document.getElementById('deposit-field').value;
-    const depositAmount = parseFloat(depositField);
+    const newDepositAmount = parseFloat(depositField);
 
     const depositTotal = document.getElementById('deposit-total').innerText;
-    const TotalDepositAmount = parseFloat(depositTotal);
-    const totalDeposit = depositAmount + TotalDepositAmount;
-    document.getElementById('deposit-total').innerText = totalDeposit;
+    const previousDepositTotal = parseFloat(depositTotal);
+    const currentTotalDeposit = newDepositAmount + previousDepositTotal;
+    document.getElementById('deposit-total').innerText = currentTotalDeposit;
+
+
+    const balanceTotalElement = document.getElementById('balance-total').innerText;
+    const previousBalanceTotal = parseFloat(balanceTotalElement);
+
+    const currentTotalBalance = previousBalanceTotal + newDepositAmount;
+    document.getElementById('balance-total').innerHTML = currentTotalBalance;
 
     document.getElementById('deposit-field').value = '';
-}
-
-function withdrawBtn () {
-    const withdrawField = document.getElementById('withdraw-field').value;
-    const
 }
