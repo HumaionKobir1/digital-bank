@@ -7,6 +7,9 @@
     <title>Digital Bank</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- fontwesome file -->
+    <script src="https://kit.fontawesome.com/407a8df81e.js" crossorigin="anonymous"></script>
+
     <!-- tailwind file -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
@@ -15,11 +18,13 @@
         <header >
             
             <section class="container mx-auto">
+
+                <!-- Nav area start -->
                 <nav class="px-2">
                     <div class="container flex flex-wrap items-center justify-between mx-auto">
                     <a href="#" class="flex items-center">
                         <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-amber-500">Digital Bank</span>
                     </a>
                     <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -64,15 +69,48 @@
                     </div>
                 </nav>
                 
-                
-    
-                <div class="banner-area">
-                    <div id="login-area">
-                        <h3>Please Login</h3>
+
+                <!-- banner area start -->
+
+                <div id="banner-area" class="grid grid-cols-1 md:grid-cols-12 gap-8 justify-center items-center md:mt-28 mt-20">
+                    <div class="col-span-7 md:text-start text-center">
+                        <h1 class="text-6xl font-bold text-white">DGITAL BANK</h1>
+                        <h2 class="text-4xl text-amber-500 font-semibold mt-5 mb-5">DISCOUNTS ON ALL<br> <span class="text-white">OUR SERVICE</span></h2>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tempora porro adipisci possimus odio. Velit Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, incidunt!.</p>
+                        <button class="bg-amber-600 px-10 rounded py-2 mt-5 font-semibold">JOIN US</button>
+                    </div>
+
+                    <div id="login-area" class="col-span-7 md:col-span-5 bg-black rounded text-center p-5">
+                        <h3 class="bg-white py-3 rounded text-lg font-bold text-amber-500">Login Here</h3>
+                        <br>
                         <div>
-                            <input type="email">
-                            <input type="password" name="" id="">
-                        </div>
+                            <input class="w-full bg-black border-b-2 text-white" type="email" placeholder="Enter Email Here">
+                            <br>
+                            <br>
+                            <input class="w-full bg-black border-b-2 text-white" type="password" placeholder="Enter Password Here" name="" id="">
+                            <br>
+                            <button onclick="LoginBtn ()" class="bg-amber-500 px-8 py-2 rounded mt-5 mb-3 w-full" id="btn-login">login</button>
+                            <p class="text-white">Don't have an account? <br> <span class="text-amber-600">Sign up</span> here</p>
+                            <p class="text-white mt-3">Log in with</p>
+
+
+                            <div class="grid grid-cols-5 gap-4 mt-3">
+                                <div>
+                                    <img class="h-6 w-12 rounded bg-white" src="images/facebook.svg" alt="">                               </div>
+                                <div>
+                                    <img class="h-6 w-12 rounded bg-white" src="images/instagram.svg" alt="">
+                                </div>
+                                <div>
+                                    <img class="h-6 w-12 rounded bg-white" src="images/twitter.svg" alt="">
+                                </div>
+                                <div>
+                                    <img class="h-6 w-12 rounded bg-white" src="images/google.svg" alt="">
+                                </div>
+                                <div>
+                                    <img class="h-6 w-12 rounded bg-white" src="images/linkedin.svg" alt="">
+                                </div>
+                            </div>
+                        </div>          
                     </div>
                 </div>
             </section>

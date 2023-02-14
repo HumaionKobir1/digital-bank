@@ -3,5 +3,14 @@
 header{
     background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #bb00ff 100%);
     background-size: cover;
+    height: fit-content;
     height: 100vh;
+}
+
+@media only screen and (max-width: 689px) {
+    header{
+        background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #bb00ff 100%);
+        background-size: cover;
+        
+    }
 }
